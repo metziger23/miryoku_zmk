@@ -7,12 +7,12 @@
         combo_esc {
             timeout-ms = <50>;
             key-positions = <3 13>;
-            bindings = <&kp ESC>;
+            bindings = <&lt U_MEDIA ESC>;
         };
         combo_del {
-            timeout-ms = <50>;
+            timeout-ms = <200>;
             key-positions = <6 16>;
-            bindings = <&kp DEL>;
+            bindings = <&lt U_FUN DEL>;
         };
     };
 };
