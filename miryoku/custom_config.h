@@ -11,81 +11,29 @@
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/mouse.h>
 
+#define COMBO(NAME, BINDINGS, KEYPOS, LAYERS, TERM) \
+combo_##NAME { \
+    timeout-ms = <TERM>; \
+    bindings = <BINDINGS>; \
+    key-positions = <KEYPOS>; \
+    layers = <LAYERS>; \
+};
+
 / {
     combos {
         compatible = "zmk,combos";
-        combo_base_left {
-            layers = <U_BASE>;
-            timeout-ms = <50>;
-            key-positions = <3 13>;
-            bindings = <&lt U_MEDIA ESC>;
-        };
-        combo_extra_left {
-            layers = <U_EXTRA>;
-            timeout-ms = <50>;
-            key-positions = <3 13>;
-            bindings = <&lt U_MEDIA ESC>;
-        };
-        combo_button_left {
-            layers = <U_BUTTON>;
-            timeout-ms = <50>;
-            key-positions = <3 13>;
-            bindings = <U_BTN3>;
-        };
-        combo_num_left {
-            layers = <U_NUM>;
-            timeout-ms = <50>;
-            key-positions = <3 13>;
-            bindings = <&kp DOT>;
-        };
-        combo_sym_left {
-            layers = <U_SYM>;
-            timeout-ms = <50>;
-            key-positions = <3 13>;
-            bindings = <&kp LPAR>;
-        };
-        combo_fun_left {
-            layers = <U_FUN>;
-            timeout-ms = <50>;
-            key-positions = <3 13>;
-            bindings = <&kp K_APP>;
-        };
-        combo_base_right {
-            layers = <U_BASE>;
-            timeout-ms = <50>;
-            key-positions = <6 16>;
-            bindings = <&lt U_FUN DEL>;
-        };
-        combo_extra_right {
-            layers = <U_EXTRA>;
-            timeout-ms = <50>;
-            key-positions = <6 16>;
-            bindings = <&lt U_FUN DEL>;
-        };
-        combo_button_right {
-            layers = <U_BUTTON>;
-            timeout-ms = <50>;
-            key-positions = <6 16>;
-            bindings = <U_BTN3>;
-        };
-        combo_nav_right {
-            layers = <U_NAV>;
-            timeout-ms = <50>;
-            key-positions = <6 16>;
-            bindings = <&kp DEL>;
-        };
-        combo_mouse_right {
-            layers = <U_MOUSE>;
-            timeout-ms = <50>;
-            key-positions = <6 16>;
-            bindings = <U_BTN3>;
-        };
-        combo_media_right {
-            layers = <U_MEDIA>;
-            timeout-ms = <50>;
-            key-positions = <6 16>;
-            bindings = <&kp C_MUTE>;
-        };
+        COMBO(base_left,    &lt U_MEDIA ESC, 3 13, U_BASE,   50)
+        COMBO(extra_left,   &lt U_MEDIA ESC, 3 13, U_EXTRA,  50)
+        COMBO(button_left,  U_BTN3,          3 13, U_BUTTON, 50)
+        COMBO(num_left,     &kp DOT,         3 13, U_NUM,    50)
+        COMBO(sym_left,     &kp LPAR,        3 13, U_SYM,    50)
+        COMBO(fun_left,     &kp K_APP,       3 13, U_FUN,    50)
+        COMBO(base_right,   &lt U_FUN DEL,   6 16, U_BASE,   50)
+        COMBO(extra_right,  &lt U_FUN DEL,   6 16, U_EXTRA,  50)
+        COMBO(button_right, U_BTN3,          6 16, U_BUTTON, 50)
+        COMBO(nav_right,    &kp DEL,         6 16, U_NAV,    50)
+        COMBO(mouse_right,  U_BTN3,          6 16, U_MOUSE,  50)
+        COMBO(media_right,  &kp C_MUTE,      6 16, U_MEDIA,  50)
     };
 };
 
