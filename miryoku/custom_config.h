@@ -49,3 +49,4 @@ combo_##NAME { \
     };
 };
 
+#define U_TAPPING_TERM 170
