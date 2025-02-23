@@ -37,9 +37,9 @@ U_NP,              U_NP,              U_LT(U_MEDIA, ESC),U_LT(U_NAV, SPACE),U_LT
 
 #define MIRYOKU_LAYER_AUTO_REPEAT_LEFT_MODS \
 &kp Q,             &kp W,             &kp F,             &kp P,             &kp B,             &kp J,             &kp L,             &kp U,             &kp Y,             &kp SQT,           \
-LGUI,              LALT,              LCTRL,             LSHFT,             &kp G,             &kp M,             N,                 E,                 I,                 O,                 \
-Z,                 RALT,              &kp C,             &kp D,             &kp V,             &kp K,             &kp H,             &kp COMMA,         DOT,               SLASH,             \
-U_NP,              U_NP,              U_NA,              LSHFT,             LSHFT,             RET,               BSPC,              U_NA,              U_NP,              U_NP
+&kp LGUI,          &kp LALT,          &kp LCTRL,         &kp LSHFT,         &kp G,             &kp M,             &kp N,             &kp E,             &kp I,             &kp O,             \
+&kp Z,             &kp RALT,          &kp C,             &kp D,             &kp V,             &kp K,             &kp H,             &kp COMMA,         &kp DOT,           &kp SLASH,         \
+U_NP,              U_NP,              U_NA,              &kp LSHFT,         &kp LSHFT,         &kp RET,           &kp BSPC,          U_NA,              U_NP,              U_NP
 
 #define MIRYOKU_LAYER_AUTO_REPEAT_RIGHT_MODS \
 &kp Q,             &kp W,             &kp F,             &kp P,             &kp B,             &kp J,             &kp L,             &kp U,             &kp Y,             &kp SQT,           \
