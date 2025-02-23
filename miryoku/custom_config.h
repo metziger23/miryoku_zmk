@@ -47,6 +47,20 @@ U_NP,              U_NP,              U_NA,              &kp LSHFT,         &kp 
 &kp Z,             &kp X,             &kp C,             &kp D,             &kp V,             &kp K,             &kp H,             &kp COMMA,         &kp RALT,          &kp SLASH,         \
 U_NP,              U_NP,              U_NA,              &kp SPACE,         &kp TAB,           &kp LSHFT,         &kp LSHFT,         U_NA,              U_NP,              U_NP
 
+#define MIRYOKU_LAYER_LIST \
+MIRYOKU_X(BASE,   "Base") \
+MIRYOKU_X(EXTRA,  "Extra") \
+MIRYOKU_X(TAP,    "Tap") \
+MIRYOKU_X(BUTTON, "Button") \
+MIRYOKU_X(NAV,    "Nav") \
+MIRYOKU_X(MOUSE,  "Mouse") \
+MIRYOKU_X(MEDIA,  "Media") \
+MIRYOKU_X(NUM,    "Num") \
+MIRYOKU_X(SYM,    "Sym") \
+MIRYOKU_X(FUN,    "Fun") \
+MIRYOKU_X(REPL,   "RepL") \
+MIRYOKU_X(REPR,   "RepR") 
+
 #define COMBO(NAME, BINDINGS, KEYPOS, LAYERS, TERM) \
 combo_##NAME { \
     timeout-ms = <TERM>; \
