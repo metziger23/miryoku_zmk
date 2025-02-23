@@ -46,18 +46,18 @@ combo_##NAME { \
 / {
     combos {
         compatible = "zmk,combos";
-        COMBO(base_left,    &lt U_MEDIA ESC, 3 13, U_BASE,   50)
-        COMBO(extra_left,   &lt U_MEDIA ESC, 3 13, U_EXTRA,  50)
-        COMBO(button_left,  U_BTN3,          3 13, U_BUTTON, 50)
-        COMBO(num_left,     &kp DOT,         3 13, U_NUM,    50)
-        COMBO(sym_left,     &kp LPAR,        3 13, U_SYM,    50)
-        COMBO(fun_left,     &kp K_APP,       3 13, U_FUN,    50)
-        COMBO(base_right,   &lt U_FUN DEL,   6 16, U_BASE,   50)
-        COMBO(extra_right,  &lt U_FUN DEL,   6 16, U_EXTRA,  50)
-        COMBO(button_right, U_BTN3,          6 16, U_BUTTON, 50)
-        COMBO(nav_right,    &kp DEL,         6 16, U_NAV,    50)
-        COMBO(mouse_right,  U_BTN3,          6 16, U_MOUSE,  50)
-        COMBO(media_right,  &kp C_MUTE,      6 16, U_MEDIA,  50)
+        COMBO(base_left,    &kp ESC,    2 3, U_BASE,   50)
+        COMBO(extra_left,   &kp ESC,    2 3, U_EXTRA,  50)
+        COMBO(button_left,  U_BTN3,     2 3, U_BUTTON, 50)
+        COMBO(num_left,     &kp DOT,    2 3, U_NUM,    50)
+        COMBO(sym_left,     &kp LPAR,   2 3, U_SYM,    50)
+        COMBO(fun_left,     &kp K_APP,  2 3, U_FUN,    50)
+        COMBO(base_right,   &kp DEL,    6 7, U_BASE,   50)
+        COMBO(extra_right,  &kp DEL,    6 7, U_EXTRA,  50)
+        COMBO(button_right, U_BTN3,     6 7, U_BUTTON, 50)
+        COMBO(nav_right,    &kp DEL,    6 7, U_NAV,    50)
+        COMBO(mouse_right,  U_BTN3,     6 7, U_MOUSE,  50)
+        COMBO(media_right,  &kp C_MUTE, 6 7, U_MEDIA,  50)
     };
 };
 
