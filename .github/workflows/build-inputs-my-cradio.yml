@@ -57,7 +57,7 @@ on:
       kconfig:
         description: 'kconfig'
         required: false
-        default: 'CONFIG_ZMK_SLEEP=y'
+        default: 'CONFIG_ZMK_SLEEP=y\nCONFIG_ZMK_BLE_EXPERIMENTAL_CONN=y\nCONFIG_BT_GATT_ENFORCE_SUBSCRIPTION=n\nCONFIG_BT_CTLR_TX_PWR_PLUS_8=y'
       branches:
         description: 'branches'
         required: false
